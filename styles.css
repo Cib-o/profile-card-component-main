@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+html,
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  height: 99%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+  background-position: -150px -160px, 200px 450px;
+  background-repeat: no-repeat, no-repeat;
+  background-color: var(--dark-cyan);
+  background-size: contain;
+}
+
+.card {
+  box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+  border-radius: 15px 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 326px;
+}
+
+.bg {
+  height: 140px;
+  width: 326px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.pfp {
+  position: absolute;
+  margin-bottom: 70px;
+  border-radius: 50%;
+  border: solid 5px #FFFFFF;
+  height: 96px;
+  width: 96px;
+}
+
+.info {
+  background-color: #FFFFFF;
+  border-radius: 0px 0px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  width: 326px;
+}
+
+.name {
+  color: var(--very-dark-desaturated-blue);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.age {
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 5px;
+  color: var(--dark-grayish-blue);
+}
+
+.location {
+  color: var(--dark-grayish-blue);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 0;
+  border-style: solid;
+  border-color: rgba(232, 233, 236, 1);
+  border-width: 1px;
+  border-top: 0;
+  width: 99%;
+}
+
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.about h1 {
+  color: var(--very-dark-desaturated-blue);
+  margin-bottom: 10px;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+}
+
+.about p {
+  color: var(--dark-grayish-blue);
+  letter-spacing: 1.5px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-position: -200px -250px, 600px 400px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-position: -200px -450px, 1100px 500px;
+  }
+}
